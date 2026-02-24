@@ -1,20 +1,42 @@
 {
-  "name": "shulam-express-example",
+  "name": "x402-quickstart",
   "version": "1.0.0",
-  "private": true,
+  "description": "Quickstart for x402 compliant payments on Base with Shulam",
   "type": "module",
   "scripts": {
-    "start": "tsx server.ts",
-    "dev": "tsx watch server.ts"
+    "server": "tsx examples/server.ts",
+    "client": "tsx examples/client.ts",
+    "compliance": "tsx examples/compliance-check.ts"
   },
   "dependencies": {
-    "@shulam/sdk": "file:../../packages/sdk",
-    "express": "^5.2.1"
+    "@shulam/x402": "^0.1.0",
+    "express": "^5.0.0"
   },
   "devDependencies": {
-    "@types/express": "^5.0.6",
+    "@types/express": "^5.0.0",
     "@types/node": "^22.0.0",
-    "tsx": "^4.7.0",
-    "typescript": "^5.9.3"
-  }
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "peerDependencies": {
+    "ethers": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shulam-Inc/x402-quickstart.git"
+  },
+  "keywords": [
+    "x402",
+    "payments",
+    "compliance",
+    "base",
+    "usdc",
+    "ai-agents",
+    "shulam",
+    "erc-8004"
+  ]
 }
