@@ -1,25 +1,25 @@
 {
   "name": "x402-quickstart",
   "version": "1.0.0",
-  "description": "Quickstart for x402 compliant payments on Base with Shulam",
+  "description": "Quickstart examples for building x402 payment-enabled APIs with Shulam",
   "type": "module",
+  "private": true,
   "scripts": {
-    "server": "tsx examples/server.ts",
-    "client": "tsx examples/client.ts",
-    "compliance": "tsx examples/compliance-check.ts"
+    "server": "tsx src/server.ts",
+    "client": "tsx src/client.ts",
+    "compliance": "tsx src/compliance.ts"
   },
   "dependencies": {
     "@shulam/x402": "^0.1.0",
-    "express": "^5.0.0"
+    "dotenv": "^16.4.7",
+    "express": "^5.0.1",
+    "viem": "^2.23.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
-    "@types/node": "^22.0.0",
+    "@types/node": "^22.13.0",
     "tsx": "^4.19.0",
     "typescript": "^5.7.0"
-  },
-  "peerDependencies": {
-    "ethers": "^6.0.0"
   },
   "engines": {
     "node": ">=22.0.0"
